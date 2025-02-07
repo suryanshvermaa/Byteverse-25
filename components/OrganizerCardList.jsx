@@ -5,9 +5,16 @@ import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { Iceland } from "next/font/google";
-import { leads, web, outreach } from "@/lib/sponserData";
+import {
+  leads,
+  web,
+  outreach,
+  design,
+  event,
+  marketing,
+} from "@/lib/sponserData";
 
-const sectionData = [leads, web, outreach];
+const sectionData = [leads, web, outreach, design, event, marketing];
 const sections = ["leads", "web", "outreach", "design", "event", "marketing"];
 
 const Iceland_font = Iceland({
@@ -38,7 +45,13 @@ const OrganizerCardList = () => {
       perView: 1,
       spacing: 32,
     },
-  })
+  });
+
+  // useEffect(() => {
+  //   if (instanceRef.current) {
+  //     instanceRef.current.moveToIdx(1);
+  //   }
+  // }, [currSection]);
 
   return (
     <div className="flex flex-col gap-8 ">
@@ -52,7 +65,9 @@ const OrganizerCardList = () => {
             <h1
               key={ind}
               onClick={() => setCurrSection(ind)}
-              className={`text-white rounded-md px-2 cursor-pointer ${currSection == ind ? 'bg-[#508CAD]' : ''}`}
+              className={`text-white rounded-md px-2 cursor-pointer ${
+                currSection == ind ? "bg-[#508CAD]" : ""
+              }`}
             >
               {section}
             </h1>
