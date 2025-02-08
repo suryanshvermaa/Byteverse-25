@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Styles from './home.module.css';
 import Image from 'next/image';
@@ -8,7 +9,7 @@ import CloudAnimation from '@/components/CloudAnimation';
   
 const Home = () => {
   return (
-    <div className={`${Styles.backgroundImage} w-full bg-no-repeat bg-center bg-cover min-h-screen overflow-hidden`}>
+    <div className={`${Styles.backgroundImage} w-full bg-no-repeat bg-center bg-cover min-h-screen overflow-hidden overflow-y-hidden`}>
         <div className='xl:h-[1080px]'>
           <nav className='w-full lg:h-20 h-16 bg-trasparent p-3 flex justify-end text-white'>
               <div className='flex items-center justify-center lg:gap-10 gap-4'>
@@ -41,11 +42,11 @@ const Home = () => {
           {/* Timer clock */}
           <Countdown/>
       </div>
-          <div className='h-[500px]'>About</div>
+          {/* <div className='h-[500px]'>About</div>
           <div className='h-[500px]'>Organisers</div>
           <div className='h-[500px]'>Rulebook</div>
           <div className='h-[500px]'>Sponsers</div>
-          <div className='h-[500px]'>Footer</div>
+          <div className='h-[500px]'>Footer</div> */}
     </div>
   )
 }
