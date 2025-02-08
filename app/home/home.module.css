@@ -1,0 +1,14 @@
+.backgroundImage{
+    background-image: url("/background-images/heroSectionBackground.png");
+}
+@media (min-width:768px ) {
+    .backgroundImage {
+      background-position: center -130px; /* Cropped from the top */
+    }
+  }
+
+@media (min-width:1000px ) {
+    .backgroundImage {
+      background-position: center 0; /* Cropped from the top */
+    }
+  }
