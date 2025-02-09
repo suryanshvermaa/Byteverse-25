@@ -1,15 +1,20 @@
 "use client"
 import React from 'react'
-import Styles from './home.module.css';
+import Styles from './hero-section.module.css';
 import Image from 'next/image';
 import { LuArrowUpRight } from "react-icons/lu";
 import Countdown from '@/components/Countdown';
 import CloudAnimation from '@/components/CloudAnimation';
+import {Krona_One} from "next/font/google"
 
-  
-const Home = () => {
+const kronaOne=Krona_One({
+  weight:'400',
+  subsets:['latin'],
+  style:'normal'
+})
+const HeroSection = () => {
   return (
-    <div className={`${Styles.backgroundImage} w-full bg-no-repeat bg-center bg-cover min-h-screen overflow-hidden overflow-y-hidden`}>
+    <div className={`${Styles.backgroundImage} ${kronaOne.className} w-full bg-no-repeat bg-top bg-cover min-h-screen overflow-hidden overflow-y-hidden`}>
         <div className='xl:h-[1080px]'>
           <nav className='w-full lg:h-20 h-16 bg-trasparent p-3 flex justify-end text-white'>
               <div className='flex items-center justify-center lg:gap-10 gap-4'>
@@ -38,17 +43,10 @@ const Home = () => {
               <h1 className='text-white text-[10px] font-bold lg:text-xl'>Apply with Devfolio</h1>
             </button>
           </div>
-
-          {/* Timer clock */}
           <Countdown/>
       </div>
-          {/* <div className='h-[500px]'>About</div>
-          <div className='h-[500px]'>Organisers</div>
-          <div className='h-[500px]'>Rulebook</div>
-          <div className='h-[500px]'>Sponsers</div>
-          <div className='h-[500px]'>Footer</div> */}
     </div>
   )
 }
 
-export default Home;
+export default HeroSection;
