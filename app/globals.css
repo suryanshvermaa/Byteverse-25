@@ -20,6 +20,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 @layer utilities {
   /* Hide scrollbar*/
   .no-scrollbar::-webkit-scrollbar {
@@ -31,3 +32,8 @@ body {
     scrollbar-width: none;
   }
 }
+=======
+::-webkit-scrollbar {
+  display: none;
+}
+
