@@ -16,7 +16,7 @@ const JudgeProfileCard = ({ name, designation, company, image, expertise, github
       <div className="relative w-auto h-72 rounded-t-xl overflow-hidden">
         <div className="absolute inset-0 top-20  bg-gradient-to-b from-[#0e5671] to-[#063f55] rounded-t-2xl"></div>
         <div className="bg-[#d9d9d9] top-28 ml-12 absolute h-32 w-32 rounded-full"></div>
-        <img src={image} alt={name} className="ml-6 relative w-full h-72 object-contain" />
+        <Image height={72} width={100} src={image} alt={name} className="ml-2 md:ml-6 relative w-full h-72 object-contain" />
       </div>
 
       {/* Lower Detail Section */}
@@ -46,8 +46,8 @@ const JudgeProfileCard = ({ name, designation, company, image, expertise, github
         </div>
       </div>
     </div>
-    <div className="absolute z-10 top-60 right-5 bg-[#177764] py-1.5 px-6  h-9 w-34 font-bold text-base rounded-full uppercase opacity-90 ">{company}</div>
-    <div className=" absolute z-10 top-36 left-7  bg-[#177764] py-1.5 px-6  h-9 w-34 font-bold text-base rounded-full uppercase">{name}</div>
+    <div className="absolute z-10 top-60 right-0 md:right-0 bg-[#177764] py-1.5 px-6  h-9 w-34 font-bold text-base rounded-full uppercase opacity-90 ">{company}</div>
+    <div className=" absolute z-10 top-36 left-0 md:left-0  bg-[#177764] py-1.5 px-6  h-9 w-34 font-bold text-base rounded-full uppercase">{name}</div>
 
     </div>
   );
