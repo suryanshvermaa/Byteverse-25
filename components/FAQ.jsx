@@ -25,9 +25,9 @@ const data=[
         "answer":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus tenetur expedita fugit illo commodi odio distinctio dicta, nostrum ipsa, quibusdam quis blanditiis vel. Molestiae reprehenderit iure repudiandae at modi optio?"
     },
 ]
-const FAQ = () => {
+export function FAQ () {
   return (
-    <div>
+    <div className="py-2">
         <div className="border-b-4 w-full lg:w-1/2 border-cyan-500 text-center mb-4 pb-1">
 
         <h1 className="text-2xl lg:text-5xl text-white font-semibold">Have Questions?</h1>
@@ -59,4 +59,3 @@ const FAQ = () => {
   )
 }
 
-export default FAQ

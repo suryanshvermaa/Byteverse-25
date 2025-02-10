@@ -14,7 +14,8 @@ const kronaOne=Krona_One({
 })
 const HeroSection = () => {
   return (
-    <div className={`${Styles.backgroundImage} ${kronaOne.className} w-full bg-no-repeat bg-top bg-cover min-h-screen overflow-hidden overflow-y-hidden`}>
+   <div className={` ${kronaOne.className} w-full  pb-[20px]  overflow-hidden overflow-y-hidden`}>
+    
         <div className='xl:h-[1080px]'>
           <Navbar/>
           <CloudAnimation />
