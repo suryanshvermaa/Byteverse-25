@@ -6,6 +6,8 @@ export default function Home() {
   return (
     <>
     <div className="" >
+      <HeroSection />
+      <PrizesSection />
     </div>
     </>
   );
