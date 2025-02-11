@@ -32,7 +32,7 @@ const ContactUs = () => {
                         </div>
                         <div className="flex items-center gap-3">
                             <FaEnvelope className="text-xl" />
-                            <p className="text-base md:text-lg">support@byteverse2025@gmail.com</p>
+                            <p className="text-[12px] md:text-base">support@byteverse2025@gmail.com</p>
                         </div>
                     </div>
 

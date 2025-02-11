@@ -8,6 +8,7 @@ import { PrizesSection } from "@/components/PrizesSection";
 import Image from "next/image";
 import Sponsors from "./sponsers";
 import OrganizerCardList from "@/components/OrganizerCardList";
+import AboutUs from "@/components/AboutUs";
 
 
 export default function Home() {
@@ -16,11 +17,11 @@ export default function Home() {
 
     <div className="bg-cover w-full bg-top" style={{ backgroundImage: "url('/background-images/heroSectionBackground.png')" }}>
       <HeroSection/>
+      <AboutUs/>
       <Judges/>
       <OrganizerCardList/>
       <PrizesSection/>
       <FAQ/>
-
       <ContactUs/>
       <Footer/>
 
