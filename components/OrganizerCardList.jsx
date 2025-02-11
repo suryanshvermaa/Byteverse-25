@@ -25,8 +25,9 @@ const Iceland_font = Iceland({
 
 const OrganizerCardList = () => {
   const [currSection, setCurrSection] = useState(0);
-
+  const [loaded, setLoaded] = useState(true);
   const [sliderRef, instanceRef] = useKeenSlider({
+    // loop : true, | this loop breaks the whole section, so i have commented it
     breakpoints: {
       "(min-width: 768px)": {
         slides: {
@@ -45,13 +46,17 @@ const OrganizerCardList = () => {
       perView: 1,
       spacing: 32,
     },
+    initial: 0,
+    created() {
+      setLoaded(true);
+    },
   });
 
-  // useEffect(() => {
-  //   if (instanceRef.current) {
-  //     instanceRef.current.moveToIdx(1);
-  //   }
-  // }, [currSection]);
+  useEffect(() => {
+    if (instanceRef.current) {
+      instanceRef.current.moveToIdx(0);
+    }
+  }, [currSection, instanceRef]);
 
   return (
     <div className="flex flex-col gap-8 ">
@@ -76,42 +81,51 @@ const OrganizerCardList = () => {
       </div>
 
       {/* Slider container section */}
-      <div className="flex items-center px-12 gap-8">
-        {/* Left arrow btn */}
-        <div
-          onClick={() => instanceRef.current?.prev()}
-          className="relative cursor-pointer w-12 h-12 bg-[rgba(255,255,255,0.7)] rounded-full p-2"
-        >
-          <Image
-            className="rotate-90"
-            src={"/scrollBtn.png"}
-            fill
-            alt="scroll_btn"
-          />
-        </div>
 
-        {/* Main scroll content */}
-        <div ref={sliderRef} className="keen-slider flex-1 ">
-          {sectionData[currSection].map((organizer) => (
-            <div key={organizer.id} className="keen-slider__slide">
-              <OrganizerCard data={organizer} />
-            </div>
-          ))}
-        </div>
+      {loaded && (
+        <div className="flex items-center px-12 gap-8">
+          {/* Left arrow btn */}
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+              instanceRef.current?.prev();
+            }}
+            className="relative cursor-pointer w-12 h-12 bg-[rgba(255,255,255,0.7)] rounded-full p-2"
+          >
+            <Image
+              className="rotate-90"
+              src={"/scrollBtn.png"}
+              fill
+              alt="scroll_btn"
+            />
+          </div>
 
-        {/* Right arrow btn */}
-        <div
-          onClick={() => instanceRef.current?.next()}
-          className="relative cursor-pointer w-12 h-12 bg-[rgba(255,255,255,0.7)] rounded-full p-2"
-        >
-          <Image
-            className="-rotate-90"
-            src={"/scrollBtn.png"}
-            fill
-            alt="scroll_btn"
-          />
+          {/* Main scroll content */}
+          <div ref={sliderRef} className="keen-slider flex-1 ">
+            {sectionData[currSection].map((organizer) => (
+              <div key={organizer.id} className="keen-slider__slide">
+                <OrganizerCard data={organizer} />
+              </div>
+            ))}
+          </div>
+
+          {/* Right arrow btn */}
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+              instanceRef.current?.next();
+            }}
+            className="relative cursor-pointer w-12 h-12 bg-[rgba(255,255,255,0.7)] rounded-full p-2"
+          >
+            <Image
+              className="-rotate-90"
+              src={"/scrollBtn.png"}
+              fill
+              alt="scroll_btn"
+            />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
