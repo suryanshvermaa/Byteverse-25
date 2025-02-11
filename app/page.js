@@ -1,5 +1,7 @@
 
+import ContactUs from "@/components/ContactUs";
 import { FAQ } from "@/components/FAQ";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Judges from "@/components/Judges";
 import { PrizesSection } from "@/components/PrizesSection";
@@ -14,6 +16,9 @@ export default function Home() {
       <Judges/>
       <PrizesSection/>
       <FAQ/>
+
+      <ContactUs/>
+      <Footer/>
 
     </div>
     </>
