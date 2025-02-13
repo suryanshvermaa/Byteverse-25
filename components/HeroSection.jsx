@@ -4,8 +4,7 @@ import Styles from './hero-section.module.css';
 import Image from 'next/image';
 import Countdown from '@/components/Countdown';
 import CloudAnimation from '@/components/CloudAnimation';
-import {Krona_One} from "next/font/google"
-import Navbar from './Navbar';
+import {Krona_One} from "next/font/google";
 
 const kronaOne=Krona_One({
   weight:'400',
@@ -17,7 +16,6 @@ const HeroSection = () => {
    <div className={` ${kronaOne.className} w-full  pb-[20px]  overflow-hidden overflow-y-hidden`}>
     
         <div className='xl:h-[1080px]'>
-          <Navbar/>
           <CloudAnimation />
           <div className='flex flex-col justify-center items-center w-full lg:h-[85vh] h-[200px] relative'>
             <Image
