@@ -11,6 +11,7 @@ import OrganizerCardList from "@/components/OrganizerCardList";
 import AboutUs from "@/components/AboutUs";
 
 
+
 export default function Home() {
   return (
     <>
@@ -19,7 +20,9 @@ export default function Home() {
       <HeroSection/>
       <AboutUs/>
       <Judges/>
+
       <OrganizerCardList/>
+      
       <PrizesSection/>
       <FAQ/>
       <ContactUs/>
