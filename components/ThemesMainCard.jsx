@@ -40,7 +40,7 @@ const ThemesMainCard = () => {
             direction={"column"}
             rowSpacing={{ sm: 2, lg: 1 }}
           >
-            <Grid2 className="text-[40px] xl:text-[45px]  2xl:text-[55px] font-bold uppercase text-[#FFD700]">
+            <Grid2 className="text-[35px] xl:text-[40px]  2xl:text-[50px] font-bold uppercase text-[#FFD700]">
               {item.topic}
             </Grid2>
             <Grid2 container>
