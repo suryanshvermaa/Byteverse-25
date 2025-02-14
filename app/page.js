@@ -7,6 +7,7 @@ import { PrizesSection } from "@/components/PrizesSection";
 import OrganizerCardList from "@/components/OrganizerCardList";
 import AboutUs from "@/components/AboutUs";
 import Themes from "@/components/Themes";
+import Tracks from "@/components/Tracks";
 
 
 
@@ -18,11 +19,10 @@ export default function Home() {
       <HeroSection/>
       <AboutUs/>
       <Judges/>
-
       <OrganizerCardList/>
-
       <PrizesSection/>
       <Themes/>
+      <Tracks/>
       <FAQ/>
       <ContactUs/>
     </div>
