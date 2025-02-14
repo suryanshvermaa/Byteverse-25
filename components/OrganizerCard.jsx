@@ -10,7 +10,7 @@ const archivo_font = Archivo_Black({
 
 const OrganizerCard = ({ data }) => {
   return (
-    <div className="min-w-[240px] max-w-[240px] flex flex-col gap-1">
+    <div className="max-w-[240px] flex flex-col gap-1">
       {/* Background image block */}
 
       <div className="h-[300px] flex relative flex-col justify-end">

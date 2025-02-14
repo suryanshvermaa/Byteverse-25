@@ -7,6 +7,7 @@ import { PrizesSection } from "@/components/PrizesSection";
 import OrganizerCardList from "@/components/OrganizerCardList";
 import AboutUs from "@/components/AboutUs";
 import Themes from "@/components/Themes";
+import Sponsors from "./sponsers";
 
 
 
@@ -19,7 +20,7 @@ export default function Home() {
       <AboutUs/>
       <Judges/>
 
-      <OrganizerCardList/>
+      <Sponsors />
 
       <PrizesSection/>
       <Themes/>
