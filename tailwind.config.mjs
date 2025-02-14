@@ -11,6 +11,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage:{
+        'anchor-pattern': "url('/anchor.png')",
+        // more can be added instead of making a .css file
+      }
     },
   },
   plugins: [],
