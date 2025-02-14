@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "pnpm install --no-frozen-lockfile && vercel build",
+    "build": "pnpm install --no-frozen-lockfile && npx vercel build",
     "start": "next start",
     "lint": "next lint"
   },
