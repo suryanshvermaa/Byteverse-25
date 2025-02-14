@@ -19,7 +19,9 @@ export default function Home() {
       <HeroSection/>
       <AboutUs/>
       <Judges/>
+
       <OrganizerCardList/>
+
       <PrizesSection/>
       <Themes/>
       <Tracks/>
