@@ -6,6 +6,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { judges } from "@/lib/judgesData";
 import Image from "next/image";
+import TitleBar from "./TitleBar";
 
 const Iceland_font = Iceland({
   weight: "400",
@@ -40,11 +41,10 @@ const Judges = () => {
 
   return (
     <section className="relative py-12 bg-cover bg-center">
+      <TitleBar side="left" title={"JUDGES & SPEAKERS"} />
       <div className="absolute top-0 left-0 w-full h-full"></div>
       <div className="container mx-auto text-center px-4 md:px-8 lg:px-12 relative z-10">
-        <h2 className={`${Iceland_font.className} text-4xl text-white font-bold uppercase mb-8 tracking-wider`}>
-          Judges & Speakers
-        </h2>
+       
 
         <div className="flex items-center gap-4 md:gap-8 relative">
           {/* Left Scroll Button */}

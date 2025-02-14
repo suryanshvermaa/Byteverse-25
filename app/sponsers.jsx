@@ -1,6 +1,7 @@
 import OrganizerCard from '@/components/OrganizerCard'
 import OrganizerCardList from '@/components/OrganizerCardList'
 import TitleBar from '@/components/TitleBar'
+import TitleSponser from '@/components/TitleSponser'
 import React from 'react'
 
 const Sponsors = () => {
@@ -8,6 +9,7 @@ const Sponsors = () => {
     <div className='flex flex-col gap-4'>
       <TitleBar title={"Organisers"} side='right' />
       <OrganizerCardList />
+      <TitleSponser />
     </div>
   )
 }
