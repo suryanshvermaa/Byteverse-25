@@ -8,7 +8,7 @@ import OrganizerCardList from "@/components/OrganizerCardList";
 import AboutUs from "@/components/AboutUs";
 import Themes from "@/components/Themes";
 import Tracks from "@/components/Tracks";
-
+import Sponsors from "./sponsers";
 
 
 export default function Home() {
@@ -19,9 +19,7 @@ export default function Home() {
       <HeroSection/>
       <AboutUs/>
       <Judges/>
-
-      <OrganizerCardList/>
-
+      <Sponsors/> 
       <PrizesSection/>
       <Themes/>
       <Tracks/>
