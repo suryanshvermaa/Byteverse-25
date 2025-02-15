@@ -1,8 +1,6 @@
 import React from "react";
-import { Button} from "@mui/material";
 import Image from "next/image";
-import ThemesMainCard from "./ThemesMainCard";
-import { ArrowRightAlt } from "@mui/icons-material";
+import { ThemesCarousel } from "./ThemesCarousel";
 
 const Themes = () => {
   return (
@@ -18,17 +16,8 @@ const Themes = () => {
       <h3 className=" text-[#FFFFFF] tracking-wider leading-loose text-center text-[20px]">
         EXPLORE THE DIVERSE THEMES AT BYTEVERSE 2025
       </h3>
-      <ThemesMainCard />
-      <div className="flex items-center justify-center p-2">
-        <Button
-          variant="outlined"
-          color="white"
-          className="font-bold px-4 py-2 "
-          size="large"
-          endIcon={<ArrowRightAlt />}
-        >
-          NEXT
-        </Button>
+      <div className="p-3">
+        <ThemesCarousel />
       </div>
     </div>
   );
