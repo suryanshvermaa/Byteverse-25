@@ -14,7 +14,7 @@ export default function Home() {
       <Judges/>
       <PrizesSection/>
       <FAQ/>
-
+      
     </div>
     </>
   );
