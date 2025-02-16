@@ -24,6 +24,7 @@ export default function Home() {
       <Themes/>
       <Tracks/>
       <FAQ/>
+    <timeline/>
       <ContactUs/>
     </div>
     </>
