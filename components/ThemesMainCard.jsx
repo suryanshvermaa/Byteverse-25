@@ -1,14 +1,14 @@
 import { Grid2 } from "@mui/material";
 import Image from "next/image";
-import { themeData } from "@/lib/Themes";
-const ThemesMainCard = () => {
+
+const ThemesMainCard = ({ data }) => {
   return (
     <Grid2
       container
       className="w-full p-5 max-lg:p-5 rounded-xl bg-[rgba(255,255,255,0.08)] justify-evenly"
       // columnGap={{ xs: 0, lg: 10 }}
     >
-      {themeData.map((item, index) => (
+      {data?.map((item, index) => (
         <Grid2
           container
           size={{ xs: 11.5, lg: 5 }}
@@ -29,26 +29,29 @@ const ThemesMainCard = () => {
             },
           }}
         >
-          <Grid2 className="" size={{ xs: 2.5 }}>
-            <Grid2 className="2xl:text-[200px] max-lg:text-[100px] xl:text-[150px] lg:text-[120px] text-center font-bold h-1/2 text-[#63DAFC] leading-none">
-              {index + 1}
+          <Grid2 className="" size={{ xs: 2.5, lg: 3, xl: 3.5 }}>
+            <Grid2 className=" max-lg:text-[70px] lg:text-[100px] xl:text-[120px]  2xl:text-[160px] text-center font-bold h-1/2 text-[#63DAFC] leading-none">
+              {item.id}
             </Grid2>
           </Grid2>
           <Grid2
             container
-            size={{ xs: 9.5 }}
+            size={{ xs: 9.5, lg: 9, xl: 8.5 }}
             direction={"column"}
             rowSpacing={{ sm: 2, lg: 1 }}
           >
-            <Grid2 className="text-[35px] xl:text-[40px]  2xl:text-[50px] font-bold uppercase text-[#FFD700]">
+            <Grid2 className="text-[28px] xl:text-[38px]  2xl:text-[48px] font-bold uppercase text-[#FFD700]">
               {item.topic}
             </Grid2>
             <Grid2 container>
-              <Grid2 size={{ xs: 6 }} className="text-lg leading-tight">
+              <Grid2
+                size={{ xs: 6, lg: 7 }}
+                className="lg:text-lg leading-tight pl-2 lg:pl-4"
+              >
                 {item.description}
               </Grid2>
-              <Grid2 size={{ xs: 6 }}>
-                <Image src={item.src} alt="" height={240} width={240} />
+              <Grid2 size={{ xs: 6, lg: 5 }}>
+                <Image src={item.src} alt="" height={220} width={220} />
               </Grid2>
             </Grid2>
           </Grid2>
