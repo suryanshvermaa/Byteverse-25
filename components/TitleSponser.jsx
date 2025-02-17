@@ -34,13 +34,13 @@ const TitleSponser = () => {
         <TitleBar side="right" title={"RANDOM SPONSER"} />
 
         <div className="mt-4 flex flex-col gap-[50px] items-center">
-            <div className="flex flex-row gap-[150px]">
+            <div className="flex flex-col md:flex-row gap-[50px] md:gap-[150px]">
                 <Image src={'/sponsers/echo.png'} className="object-contain" alt="sponsers" height={100} width={200} />
                 <Image src={'/sponsers/interview.png'} className="object-contain" alt="sponsers" height={100} width={200} />
                 <Image src={'/sponsers/taskade.png'} className="object-contain" alt="sponsers" height={100} width={200} />
             </div>
 
-            <div className="flex flex-row gap-[150px] ">
+            <div className="flex flex-col md:flex-row gap-[50px] md:gap-[150px] ">
             <Image src={'/sponsers/replit1.png'} className="object-contain" alt="sponsers" height={100} width={200} />
             <Image src={'/sponsers/replit2.png'} className="object-contain" alt="sponsers" height={100} width={200} />
             </div>
