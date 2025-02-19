@@ -1,45 +1,71 @@
 "use client";
 import React, { useState } from "react";
+import { Iceland } from "next/font/google";
 import { LuArrowUpRight } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
+import CloudAnimation from "./animationcloud";
+
+const Iceland_font = Iceland({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+});
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="relative z-[9999]">
-      <nav className="w-full lg:h-20 h-16 bg-transparent p-3 flex justify-end text-white">
-        <div className="flex items-center justify-center lg:gap-10 gap-4">
+    <div className="relative z-[50]">
+      <nav className="w-full h-16 lg:h-20 bg-transparent px-4 flex justify-between items-center text-white">
+        {/* Brochure Button */}
+        <div className="flex items-center">
           <div className="flex flex-row rounded-lg border border-gray-200 p-1">
             <div className="bg-white w-4 rounded-l-lg"></div>
-            <button className="lg:px-2 px-1 font-bold py-0 bg-transparent rounded-r lg:text-xl text-xs">
+            <button className="px-2 font-bold py-1 bg-transparent rounded-r text-sm md:text-base lg:text-xl">
               Brochure
             </button>
           </div>
-
-          <div className="relative">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="flex flex-row items-center gap-1 rounded-lg border border-gray-200 p-1 lg:text-xl text-xs"
-            >
-              Menu
-              <LuArrowUpRight color="white" className="lg:text-xl text-xl" />
-            </button>
-          </div>
         </div>
-      </nav>
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md flex justify-center items-center z-[9999]"
+
+        {/* Menu Button */}
+        <button
+          onClick={handleMenuToggle}
+          className="flex items-center gap-1 rounded-lg border border-gray-200 p-2 text-sm md:text-base lg:text-xl"
         >
-          <div className="absolute top-5 right-5 text-white text-3xl cursor-pointer" onClick={() => setIsOpen(false)}>
+          Menu
+          <LuArrowUpRight className="text-lg md:text-xl lg:text-2xl" />
+        </button>
+      </nav>
+
+      {/* Cloud Animation */}
+      <CloudAnimation isOpen={isOpen} />
+
+      {/* Menu Content */}
+      {isOpen && (
+        <div className="fixed inset-0 flex flex-col items-center justify-center z-[9999]">
+          {/* Close Button */}
+          <button
+            className="absolute top-6 right-6 bg-white text-black text-xl md:text-2xl lg:text-3xl cursor-pointer p-3 md:p-4 lg:p-5 rounded-full"
+            onClick={handleMenuToggle}
+          >
             <IoClose />
-          </div>
-          <div className="inset-0 bg-opacity-70 bg-white-100 backdrop-blur-md  text-blue rounded-lg p-6 w-full max-w-md text-center flex flex-col space-y-4">
-            <a href="#" className="hover:bg-gray-600 p-3 rounded">Theme</a>
-            <a href="#" className="hover:bg-gray-600 p-3 rounded">Timeline</a>
-            <a href="#" className="hover:bg-gray-600 p-3 rounded">Sponsor</a>
-            <a href="#" className="hover:bg-gray-600 p-3 rounded">Prize</a>
+          </button>
+
+          {/* Menu Options */}
+          <div className=" text-black rounded-lg p-6 w-[90%] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center flex flex-col space-y-5">
+            {["Theme", "Timeline", "Sponsor", "Prize"].map((item, index) => (
+              <a
+                key={index}
+                href="#"
+                className={`${Iceland_font.className} hover:bg-gray-600 text-xl md:text-2xl lg:text-3xl p-3 rounded`}
+              >
+                {item}
+              </a>
+            ))}
           </div>
         </div>
       )}
