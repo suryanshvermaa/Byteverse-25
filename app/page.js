@@ -10,6 +10,7 @@ import Themes from "@/components/Themes";
 import Tracks from "@/components/Tracks";
 import Sponsors from "./sponsers";
 import Timeline from "@/components/Timeline";
+import Rulebook from "@/components/Rulebook";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
     <div className="bg-cover w-full bg-top" >
       <HeroSection/>
       <AboutUs/>
+      <Rulebook/>
       <Judges/>
       <Sponsors/> 
       <PrizesSection/>

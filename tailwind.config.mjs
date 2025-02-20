@@ -13,6 +13,7 @@ export default {
       },
       backgroundImage:{
         'anchor-pattern': "url('/anchor.png')",
+        'wood-plank':"url('/background-images/woodPlank.png')"
         // more can be added instead of making a .css file
       }
     },
