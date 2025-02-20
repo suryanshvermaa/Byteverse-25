@@ -75,18 +75,19 @@ const Navbar = () => {
 
           {/* Menu Options with Delay */}
           {showMenu && (
-            <div className=" text-black absolute top-[150px] rounded-lg p-6 w-[90%] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center flex flex-col space-y-5">
-              {["Theme", "Timeline", "Sponsor", "Prize"].map((item, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className={`${Iceland_font.className} hover:bg-gray-600 text-xl md:text-2xl lg:text-3xl p-3 rounded`}
-                >
-                  {item}
-                </a>
-              ))}
-            </div>
-          )}
+  <div className="text-black absolute top-[150px] rounded-lg p-6 w-[90%] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center flex flex-col space-y-5">
+    {["Home", "themes", "timeline"].map((item, index) => (
+      <a
+        key={index}
+        href={item === "Home" ? "/" : `/${item}`}
+        className={`${Iceland_font.className} hover:bg-gray-600 text-xl md:text-2xl lg:text-3xl p-3 rounded`}
+      >
+        {item}
+      </a>
+    ))}
+  </div>
+)}
+
         </div>
       )}
     </div>

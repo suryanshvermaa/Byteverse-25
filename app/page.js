@@ -4,12 +4,8 @@ import FAQ from "@/components/FAQ";
 import HeroSection from "@/components/HeroSection";
 import Judges from "@/components/Judges";
 import { PrizesSection } from "@/components/PrizesSection";
-import OrganizerCardList from "@/components/OrganizerCardList";
 import AboutUs from "@/components/AboutUs";
-import Themes from "@/components/Themes";
-import Tracks from "@/components/Tracks";
 import Sponsors from "./sponsers";
-import Timeline from "@/components/Timeline";
 import Rulebook from "@/components/Rulebook";
 
 
@@ -24,10 +20,7 @@ export default function Home() {
       <Judges/>
       <Sponsors/> 
       <PrizesSection/>
-      <Themes/>
-      <Tracks/>
-      <FAQ/>
-      <Timeline/>
+      <FAQ/>   
       <ContactUs/>
     </div>
     </>
