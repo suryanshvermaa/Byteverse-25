@@ -5,7 +5,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import ThemesMainCard from "./ThemesMainCard";
 import { Button } from "@mui/material";
 import { ArrowRightAlt } from "@mui/icons-material";
-import { themeData } from "@/data/Themes";
+import { themeData } from "@/lib/Themes";
 
 const items = themeData.map((item, index) => (
   <ThemesMainCard data={item} key={index} />

@@ -1,6 +1,6 @@
 
 import ContactUs from "@/components/ContactUs";
-import { FAQ } from "@/components/FAQ";
+import FAQ from "@/components/FAQ";
 import HeroSection from "@/components/HeroSection";
 import Judges from "@/components/Judges";
 import { PrizesSection } from "@/components/PrizesSection";
@@ -9,6 +9,7 @@ import AboutUs from "@/components/AboutUs";
 import Themes from "@/components/Themes";
 import Tracks from "@/components/Tracks";
 import Sponsors from "./sponsers";
+import Timeline from "@/components/Timeline";
 
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
       <Themes/>
       <Tracks/>
       <FAQ/>
-    <timeline/>
+      <Timeline/>
       <ContactUs/>
     </div>
     </>
