@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Iceland } from "next/font/google";
 import { LuArrowUpRight } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
@@ -13,14 +13,30 @@ const Iceland_font = Iceland({
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showCloseButton, setShowCloseButton] = useState(false);
 
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      const menuTimer = setTimeout(() => setShowMenu(true), 1000);
+      const closeButtonTimer = setTimeout(() => setShowCloseButton(true), 1000);
+      return () => {
+        clearTimeout(menuTimer);
+        clearTimeout(closeButtonTimer);
+      };
+    } else {
+      setShowMenu(false);
+      setShowCloseButton(false);
+    }
+  }, [isOpen]);
+
   return (
     <div className="relative z-[50]">
-      <nav className="w-full h-16 lg:h-20 bg-transparent px-4 flex justify-between items-center text-white">
+      <nav className="w-full h-16 lg:h-20 bg-transparent px-4 flex justify-end gap-2 items-center text-white">
         {/* Brochure Button */}
         <div className="flex items-center">
           <div className="flex flex-row rounded-lg border border-gray-200 p-1">
@@ -47,26 +63,30 @@ const Navbar = () => {
       {/* Menu Content */}
       {isOpen && (
         <div className="fixed inset-0 flex flex-col items-center justify-center z-[9999]">
-          {/* Close Button */}
-          <button
-            className="absolute top-6 right-6 bg-white text-black text-xl md:text-2xl lg:text-3xl cursor-pointer p-3 md:p-4 lg:p-5 rounded-full"
-            onClick={handleMenuToggle}
-          >
-            <IoClose />
-          </button>
+          {/* Close Button with Delay */}
+          {showCloseButton && (
+            <button
+              className="absolute top-[0] right-10  text-black text-xl md:text-2xl lg:text-3xl cursor-pointer p-3 md:p-4 lg:p-5 rounded-full"
+              onClick={handleMenuToggle}
+            >
+              <IoClose />
+            </button>
+          )}
 
-          {/* Menu Options */}
-          <div className=" text-black rounded-lg p-6 w-[90%] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center flex flex-col space-y-5">
-            {["Theme", "Timeline", "Sponsor", "Prize"].map((item, index) => (
-              <a
-                key={index}
-                href="#"
-                className={`${Iceland_font.className} hover:bg-gray-600 text-xl md:text-2xl lg:text-3xl p-3 rounded`}
-              >
-                {item}
-              </a>
-            ))}
-          </div>
+          {/* Menu Options with Delay */}
+          {showMenu && (
+            <div className=" text-black absolute top-[150px] rounded-lg p-6 w-[90%] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center flex flex-col space-y-5">
+              {["Theme", "Timeline", "Sponsor", "Prize"].map((item, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className={`${Iceland_font.className} hover:bg-gray-600 text-xl md:text-2xl lg:text-3xl p-3 rounded`}
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
