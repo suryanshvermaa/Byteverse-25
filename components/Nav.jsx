@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Iceland } from "next/font/google";
 import { LuArrowUpRight } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
-import CloudAnimation from "./animationcloud";
+import CloudAnimation from "./Animationcloud";
 
 const Iceland_font = Iceland({
   weight: "400",
