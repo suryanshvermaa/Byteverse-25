@@ -1,13 +1,12 @@
 
 import ContactUs from "@/components/ContactUs";
-import { FAQ } from "@/components/FAQ";
+import FAQ from "@/components/FAQ";
 import HeroSection from "@/components/HeroSection";
 import Judges from "@/components/Judges";
 import { PrizesSection } from "@/components/PrizesSection";
-import OrganizerCardList from "@/components/OrganizerCardList";
 import AboutUs from "@/components/AboutUs";
-import Themes from "@/components/Themes";
-
+import Sponsors from "./sponsers";
+import Rulebook from "@/components/Rulebook";
 
 
 export default function Home() {
@@ -17,13 +16,11 @@ export default function Home() {
     <div className="bg-cover w-full bg-top" >
       <HeroSection/>
       <AboutUs/>
+      <Rulebook/>
       <Judges/>
-
-      <OrganizerCardList/>
-
+      <Sponsors/> 
       <PrizesSection/>
-      <Themes/>
-      <FAQ/>
+      <FAQ/>   
       <ContactUs/>
     </div>
     </>

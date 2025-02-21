@@ -12,7 +12,7 @@ const TitleBar = ({title, side = "left"}) => {
   return (
     <div className='flex items-center gap-4'>
         <div className={`flex-1 ${side == "left" ? 'bg-[#5B9ABC] h-1' : ''}`}></div>
-        <div className={`${Iceland_font.className} uppercase text-[48px]`}>{title}</div>
+        <div className={`${Iceland_font.className} uppercase text-[32px] md:text-[48px]`}>{title}</div>
         <div className={`flex-1 ${side == "right" ? 'bg-[#5B9ABC] h-1' : ''}`}></div>
     </div>
   )
