@@ -26,16 +26,16 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="flex gap-10 mt-4">
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/byteverse.nitp/" target="_blank" rel="noopener noreferrer">
                             <Instagram/>
                         </a>
                         <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                             <Twitter/>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/hackslash/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
                             <LinkedIn/>
                         </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.youtube.com/@HackSlashDevelopersClub" target="_blank" rel="noopener noreferrer">
                             <YouTube/>
                         </a>
 
@@ -48,11 +48,15 @@ const Footer = () => {
                     <div className="flex space-x-8">
                         <div className="flex flex-col items-center gap-2">
                             <p className={`${kronaOne.className} font-semibold`}>Host</p>
+                            <a href="https://www.instagram.com/hackslash.nitp/" target="_blank" rel="noopener noreferrer"> 
                             <Image src="/logos/hackslashLogo.png" alt="Hackslash" width={100} height={50} />
+                            </a>
                         </div>
                         <div className="flex flex-col items-center gap-2">
                             <p className={`${kronaOne.className} font-semibold`}>Design</p>
-                            <Image src="/logos/descoLogo.png" alt="Desco" width={30} height={30} />
+                            <a href="https://www.instagram.com/desco.nitp/" target="_blank" rel="noopener noreferrer">
+                             <Image src="/logos/descoLogo.png" alt="Desco" width={30} height={30} />
+                            </a>
                         </div>
                     </div>
                     <div className="mt-6 flex gap-4 items-center">
