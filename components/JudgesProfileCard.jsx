@@ -14,9 +14,9 @@ const JudgeProfileCard = ({ name, designation, company, image, expertise, github
     <div className="relative flex flex-col items-center justify-center w-60 overflow-hidden">
       {/* Upper Section (Image & Background) */}
       <div className="relative w-auto h-72 rounded-t-xl overflow-hidden">
-        <div className="absolute inset-0 top-20  bg-gradient-to-b from-[#0e5671] to-[#063f55] rounded-t-2xl"></div>
-        <div className="bg-[#d9d9d9] top-28 ml-12 absolute h-32 w-32 rounded-full"></div>
-        <Image height={72} width={100} src={image} alt={name} className="ml-2 md:ml-6 relative w-full h-72 object-contain" />
+        {/* <div className="absolute inset-0 top-20  bg-gradient-to-b from-[#0e5671] to-[#063f55] rounded-t-2xl"></div>
+        <div className="bg-[#d9d9d9] top-28 ml-12 absolute h-32 w-32 rounded-full"></div> */}
+        <Image height={72} width={100} src={image} alt={name} className=" relative w-full h-72 object-cover" />
       </div>
 
       {/* Lower Detail Section */}
