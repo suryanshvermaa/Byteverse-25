@@ -39,8 +39,8 @@ export default function AboutUs() {
 
       <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-12">
         {[
-          { number: <CountUp number={6} />, text: "Themes" },
-          { number: <CountUp number={36} />, text: "Hours of Hacking" },
+          { number: <CountUp number={11} />, text: "Themes" },
+          { number: <CountUp number={30} />, text: "Hours of Hacking" },
           { number: <CountUp number={1800} />, text: "Participants" },
         ].map((stat, index) => (
           <div key={index} className="flex flex-col items-center">
@@ -73,17 +73,12 @@ export default function AboutUs() {
             Byteverse: Unleash your coding magic!
           </h3>
           <p className="text-gray-400 mt-8 text-lg md:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            aliquet gravida mi, sed bibendum diam fermentum a. Proin commodo
-            enim sed augue rutrum imperdiet. Aliquam quis aliquam mi. Quisque
-            vehicula porta bibendum. Nam vestibulum egestas orci, sit amet
-            semper arcu imperdiet nec. Pellentesque facilisis justo vitae dui
-            congue congue.
+          Calling all tech wizards, problem solvers, and creative minds! Byteverse, the annual hackathon by Hackslash NITP, returns for its sixth edition. This electrifying event is where innovation meets code and your creativity knows no bounds.
           </p>
         </div>
         <div className="flex-1">
           <Image
-            src="/abtus2.png"
+            src="/image.jpeg"
             alt="Byteverse Team"
             width={500}
             height={500}

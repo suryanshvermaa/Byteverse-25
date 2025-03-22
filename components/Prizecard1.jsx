@@ -38,7 +38,7 @@ export function PrizesCard() {
 
               <p className="text-[#D6AE7D] mt-[80px] md:mt-[60px] w-[200px] text-sm ">
                 One-way system drives, mock interviews with unlimited practice by Interview Buddyy.
-                One-way system drives, mock interviews with unlimited practice by Interview Buddyy.
+                {/* One-way system drives, mock interviews with unlimited practice by Interview Buddyy. */}
               </p>
 
               <button
@@ -119,11 +119,10 @@ export function PrizesCard2() {
                 INR
               </p>
               <p className="text-2xl sm:text-3xl font-extrabold text-[#D6AE7D]">
-                10000
+                7000
               </p>
 
               <p className="text-[#D6AE7D] mt-[80px] md:mt-[60px] w-[200px] text-sm ">
-                One-way system drives, mock interviews with unlimited practice by Interview Buddyy.
                 One-way system drives, mock interviews with unlimited practice by Interview Buddyy.
               </p>
 
@@ -204,12 +203,12 @@ export function PrizesCard3() {
                 INR
               </p>
               <p className="text-2xl sm:text-3xl font-extrabold text-[#D6AE7D]">
-                10000
+                5000
               </p>
 
               <p className="text-[#D6AE7D] mt-[80px] md:mt-[60px] w-[200px] text-sm ">
                 One-way system drives, mock interviews with unlimited practice by Interview Buddyy.
-                One-way system drives, mock interviews with unlimited practice by Interview Buddyy.
+                
               </p>
 
               <button
@@ -290,11 +289,10 @@ export function PrizesCard4({title}) {
                 INR
               </p>
               <p className="text-2xl sm:text-3xl font-extrabold text-[#D6AE7D]">
-                10000
+                3000
               </p>
                <div className="text-center mt-[80px] md:mt-[70px] flex flex-col items-center">
               <p className="text-[#D6AE7D]  text-sm ">
-                One-way system drives, mock interviews with unlimited practice by Interview Buddyy.
                 One-way system drives, mock interviews with unlimited practice by Interview Buddyy.
               </p>
 
