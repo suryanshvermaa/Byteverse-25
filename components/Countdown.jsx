@@ -5,7 +5,7 @@ const TimerCard = dynamic(() => import("./TimerCard"), { ssr: false });
 const Countdown = () => {
     const [currTime,setCurrTime]=useState(new Date());
     // Date of hackathon *************************************************************************************************************************
-    const target = new Date('05/04/2025');
+    const target = new Date('04/12/2025');
     // Date of hackathon *************************************************************************************************************************
     const diff = target.getTime() - currTime.getTime()
     

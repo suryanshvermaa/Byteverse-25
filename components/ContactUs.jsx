@@ -22,17 +22,17 @@ const ContactUs = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between w-full max-w-6xl gap-10">
                     {/* Contact Details Section */}
                     <div className="flex flex-col items-start bg-opacity-20 backdrop-blur-md border-2 border-cyan-500 rounded-2xl p-4 sm:p-6 w-full lg:w-2/5 shadow-lg">
-                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-4">Lorem Epsom</h2>
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-4"></h2>
                         <div className="text-xs sm:text-sm md:text-base font-medium mb-4 sm:mb-6 leading-relaxed">
-                            Lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom.
+                           National Institute of Technology Patna,Bihta Campus , Kateshar,Bihta, Bihar 801103.
                         </div>
                         <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                             <FaPhone className="text-sm sm:text-lg md:text-xl font-semibold" />
-                            <div className="text-xs sm:text-sm md:text-base font-medium">+91 9898989898</div>
+                            <div className="text-xs sm:text-sm md:text-base font-medium">+91 6398098155</div>
                         </div>
                         <div className="flex items-center gap-2 sm:gap-3">
                             <FaEnvelope className="text-sm sm:text-lg md:text-xl font-semibold" />
-                            <div className="text-xs sm:text-sm md:text-base font-medium">support@byteverse2025.com</div>
+                            <div className="text-xs sm:text-sm md:text-base font-medium">hackslashclub@nitp.ac.in</div>
                         </div>
                     </div>
 
