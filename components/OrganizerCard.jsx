@@ -15,7 +15,7 @@ const OrganizerCard = ({ data }) => {
 
       <div className="h-[300px] flex relative flex-col justify-end">
         <Image className="object-cover z-100" src={data.img} fill alt="image" />
-        <div className="w-full h-[250px] md:h-[280px] -z-10 relative bg-[url(/organizerBackground.jpeg)] bg-cover overflow-visible"></div>
+        {/* <div className="w-full h-[250px] md:h-[280px] -z-10 relative bg-[url(/organizerBackground.jpeg)] bg-cover overflow-visible"></div> */}
       </div>
 
       {/* The name should not be too long other wise ... will be given */}
