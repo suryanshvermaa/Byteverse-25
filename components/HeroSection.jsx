@@ -25,9 +25,12 @@ const HeroSection = () => {
             className='lg:w-[690px] lg:h-[300px] md:h-[200px]  lg:aspect-square h-[50%] w-[280px]'
             alt='Byteverse logo'
             />
-            <button className='bg-[#3770FF] flex flex-row gap-2 py-1 rounded-lg justify-center items-center px-6 mt-8 lg:mt-20 lg:py-2'>
-              <Image src={'/logos/Devfolio.svg'} alt='devfolio logo' width={16} height={16} className='aspect-square text-xl lg:text-3xl'/>
-              <h1 className='text-white text-[10px] font-bold lg:text-xl'>Apply with Devfolio</h1>
+            <button className='bg-white flex flex-row gap-2 py-1 rounded-lg justify-center items-center px-6 mt-8 lg:mt-20 lg:py-2'>
+               <div  className='flex flex-row gap-2 items-center'>
+               <h1 className='text-[#1c4980] text-[10px] font-bold lg:text-xl'>Apply with </h1>
+               <Image src={'/unstop.png'} alt='unstop logo' width={80} height={15} className='color-white text-xl lg:text-3xl'/>
+               </div>
+            
             </button>
           </div>
           <Countdown/>
