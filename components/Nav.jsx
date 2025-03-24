@@ -41,9 +41,9 @@ const Navbar = () => {
         <div className="flex items-center">
           <div className="flex flex-row rounded-lg border border-gray-200 p-1">
             <div className="bg-white w-4 rounded-l-lg"></div>
-            <button className="px-2 font-bold py-1 bg-transparent rounded-r text-sm md:text-base lg:text-xl">
+            <a href="https://drive.google.com/file/d/1w-XEdcUNJWg1CB6S58DHiGUe_TlQ2fIf/view?usp=sharing" rel="noopener noreferrer" target="_blank"><button className="px-2 font-bold py-1 bg-transparent rounded-r text-sm md:text-base lg:text-xl">
               Brochure
-            </button>
+            </button></a>
           </div>
         </div>
 

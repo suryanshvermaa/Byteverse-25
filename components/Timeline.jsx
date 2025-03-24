@@ -8,17 +8,17 @@ const Iceland_font = Iceland({
 
 const Timeline = () => {
     const timelineEvents = [
-        { title: "Hackathon Registration Opens", date: "1st March, 2025", imgSrc: "/timeline/timeline1.png" },
-        { title: "Info Session", date: "1st April, 2025", imgSrc: "/timeline/timeline2.png" },
-        { title: "PPT Submission Commences", date: "2nd April, 2025", imgSrc: "/timeline/timeline3.png" },
-        { title: "PPT Submission Deadline", date: "9th April, 2025", imgSrc: "/timeline/timeline4.png" },
-        { title: "Inauguration Ceremony", date: "10th April, 2025", imgSrc: "/timeline/timeline5.png" },
-        { title: "Presentation Round", date: "10th April, 2025", imgSrc: "/timeline/timeline6.png" },
-        { title: "Hackathon Registration Closes", date: "11th April, 2025", imgSrc: "/timeline/timeline7.png" },
-        { title: "Hackathon Commences", date: "12th April, 2025", imgSrc: "/timeline/timeline8.png" },
-        { title: "Mid Evaluation", date: "13th April, 2025", imgSrc: "/timeline/timeline9.png" },
-        { title: "Hackathon Concludes", date: "13th April, 2025", imgSrc: "/timeline/timeline10.png" },
-        { title: "Result Declaration", date: "14th April, 2025", imgSrc: "/timeline/timeline11.png" },
+        { title: "Hackathon Registration Opens", date: "1st March, 2025", imgSrc: "/timeline/timeline1.webp" },
+        { title: "Info Session", date: "1st April, 2025", imgSrc: "/timeline/timeline2.webp" },
+        { title: "PPT Submission Commences", date: "2nd April, 2025", imgSrc: "/timeline/timeline3.webp" },
+        { title: "PPT Submission Deadline", date: "9th April, 2025", imgSrc: "/timeline/timeline4.webp" },
+        { title: "Inauguration Ceremony", date: "10th April, 2025", imgSrc: "/timeline/timeline5.webp" },
+        { title: "Presentation Round", date: "10th April, 2025", imgSrc: "/timeline/timeline6.webp" },
+        { title: "Hackathon Registration Closes", date: "11th April, 2025", imgSrc: "/timeline/timeline7.webp" },
+        { title: "Hackathon Commences", date: "12th April, 2025", imgSrc: "/timeline/timeline8.webp" },
+        { title: "Mid Evaluation", date: "13th April, 2025", imgSrc: "/timeline/timeline9.webp" },
+        { title: "Hackathon Concludes", date: "13th April, 2025", imgSrc: "/timeline/timeline10.webp" },
+        { title: "Result Declaration", date: "14th April, 2025", imgSrc: "/timeline/timeline11.webp" },
     ];
 
     return (
@@ -39,7 +39,7 @@ const Timeline = () => {
                         >
 
                             <img 
-                                src="/Timeline.png"
+                                src="/timeline/timeline.webp"
                                 width={64} 
                                 alt={event.title} 
                             />
@@ -56,7 +56,7 @@ const Timeline = () => {
                                         <div className="absolute left-[-260px] sm:left-[-280px] text-end break-words whitespace-normal w-64 mt-[18px]">
                                             <div className="flex flex-row gap-2 items-center justify-end">
                                             <img src={event.imgSrc} width={18} className="hidden sm:flex"></img>
-                                            <span className="text-white text-sm sm:text-lg lg:text-xl  ">{event.title}</span>
+                                            <span className="text-white text-sm sm:text-base lg:text-xl  ">{event.title}</span>
                                             </div>
                                             <div>
                                                 <span className="text-white text-xs sm:text-sm lg:text-base mt-1">- {event.date}</span>
@@ -65,17 +65,17 @@ const Timeline = () => {
 
                                         <span className="w-3 h-3 sm:w-4 sm:h-4 bg-[#E5C701] rounded-full"></span>
 
-                                        <span className=" w-[20px] sm:w-[80px] md:w-[120px] lg:w-[200px] h-1 bg-[#E5C701]"></span>
+                                        <span className=" w-[40px] sm:w-[50px] md:w-[90px] lg:w-[160px] xl:w-[240px] 2xl:[300px] h-1 bg-[#E5C701]"></span>
                                     </>
                                 ) : (
                                     <>
-                                        <span className="w-[20px] sm:w-[80px] md:w-[120px] lg:w-[200px] h-1 bg-[#E5C701]"></span>
+                                        <span className="w-[40px] sm:w-[50px] md:w-[90px] lg:w-[160px] xl:w-[240px] 2xl:[300px] h-1 bg-[#E5C701]"></span>
 
                                         <span className="w-3 h-3 sm:w-4 sm:h-4 bg-[#E5C701] rounded-full"></span>
 
-                                        <div className="absolute right-[-260px] sm:right-[-280px] text-left break-words whitespace-normal w-64 mt-[18px]">
+                                        <div className="absolute right-[-390px] sm:right-[-400px] text-left w-96 mt-[18px] sm:mt-[25px]">
                                             <div className="flex flex-row gap-2 items-center justify-start">
-                                              <span className="text-white text-sm sm:text-lg lg:text-xl">{event.title}</span>
+                                              <span className="text-white text-sm sm:text-base lg:text-xl">{event.title}</span>
                                               <img src={event.imgSrc} width={18} className="hidden sm:flex"></img>
                                             </div>
                                             <span className="text-white text-xs sm:text-sm lg:text-base block mt-1">- {event.date}</span>
