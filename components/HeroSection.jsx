@@ -40,12 +40,3 @@ const HeroSection = () => {
 }
 
 export default HeroSection;
-
-
-// <button className='bg-white flex flex-row gap-2 py-1 rounded-lg justify-center items-center px-6 mt-8 lg:mt-20 lg:py-2'>
-// <div  className='flex flex-row gap-2 items-center'>
-// <h1 className='text-[#3770FF] text-[10px] font-bold lg:text-xl'>Apply with </h1>
-// <Image src={'/unstop.png'} alt='unstop logo' width={70} height={10} className='color-white text-xl lg:text-3xl'/>
-// </div>
-
-// </button>
