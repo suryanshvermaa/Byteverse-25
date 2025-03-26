@@ -4,7 +4,7 @@ import { ThemesCarousel } from "./ThemesCarousel";
 
 const Themes = () => {
   return (
-    <div className="w-full">
+    <div className="w-full text-white">
       <div className="flex items-center gap-4 w-full ">
         <div className="flex-1"></div>
         <div className="flex items-center ">
