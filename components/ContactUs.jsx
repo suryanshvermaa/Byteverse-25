@@ -14,7 +14,7 @@ const ContactUs = () => {
     return (
         <div className={kronaOne.className}>
             {/* Title Section */}
-            <div className="w-full max-w-3xl ml-auto border-b-4 border-cyan-500 pb-2 text-center md:text-left">
+            <div className="w-full max-w-3xl ml-auto border-b-4 border-cyan-500 pb-2 text-center md:text-left text-white">
                 <h1 className="text-4xl lg:text-5xl font-semibold">Contact <span className="text-cyan-500">Us</span></h1>
             </div>
 

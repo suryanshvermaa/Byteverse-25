@@ -2,7 +2,7 @@ import { PrizesCard, PrizesCard2, PrizesCard3, PrizesCard4 } from "./Prizecard1"
 
 export function PrizesSection() {
     return (
-        <div className="flex flex-col items-center gap-5 justify-center px-4 md:px-8">
+        <div className="flex flex-col items-center gap-5 justify-center px-4 md:px-8 text-white">
             <h1 className="text-[40px] md:text-[50px] font-[600] my-[30px] md:my-[40px] tracking-wider">PRIZES</h1>
 
             {/* First Row */}
