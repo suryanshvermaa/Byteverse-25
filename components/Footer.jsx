@@ -14,7 +14,7 @@ const kronaOne = Krona_One({
 
 const Footer = () => {
     return (
-        <div className="p-8 md:p-12 lg:mx-16">
+        <div className="p-8 md:p-12 lg:mx-16 text-white">
             {/* Footer Section */}
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
                 {/* Left Section */}

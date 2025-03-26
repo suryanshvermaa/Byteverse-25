@@ -40,7 +40,7 @@ const Judges = () => {
   }, [instanceRef]);
 
   return (
-    <section className="relative py-12 bg-cover bg-center">
+    <section className="relative py-12 bg-cover bg-center text-white">
       <TitleBar side="left" title={"JUDGES & SPEAKERS"} />
       <div className="absolute top-0 left-0 w-full h-full"></div>
       <div className="container mx-auto text-center px-4 md:px-8 lg:px-12 relative z-10">
