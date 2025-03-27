@@ -104,10 +104,10 @@ export default function AboutUs() {
             fostering a culture of innovation and collaboration...
           </p>
           <div className="mt-4 md:mt-6 flex justify-center gap-3 md:gap-4">
-            <a href="#" className="text-gray-300 text-xl md:text-2xl">
+            <a href="https://www.instagram.com/hackslash.nitp/?hl=en" className="text-gray-300 text-xl md:text-2xl">
               <FaInstagram />
             </a>
-            <a href="#" className="text-gray-300 text-xl md:text-2xl">
+            <a href="https://www.linkedin.com/company/hackslash/posts/?feedView=all" className="text-gray-300 text-xl md:text-2xl">
               <FaLinkedin />
             </a>
           </div>
@@ -137,10 +137,10 @@ export default function AboutUs() {
             innovation to shape the future...
           </p>
           <div className="mt-4 md:mt-6 flex justify-center gap-3 md:gap-4">
-            <a href="#" className="text-gray-300 text-xl md:text-2xl">
+            <a href="https://www.instagram.com/desco.nitp/?hl=en" className="text-gray-300 text-xl md:text-2xl">
               <FaInstagram />
             </a>
-            <a href="#" className="text-gray-300 text-xl md:text-2xl">
+            <a href="https://www.linkedin.com/company/desco-nitp/" className="text-gray-300 text-xl md:text-2xl">
               <FaLinkedin />
             </a>
           </div>
