@@ -28,14 +28,6 @@ const JudgeProfileCard = ({ name, designation, company, image, expertise, github
         </div>
 
         <div className="flex items-center gap-4">
-          <Image src="/github.png" alt="Github Icon" width={16} height={16} />
-          <p> {githubLink && (
-            <a href={githubLink} className={`${almaraiFont.className} text-white  text-xs uppercase`}> {githubLink.split("/").filter(Boolean).pop()} </a>
-          )}
-          </p>
-        </div>
-
-        <div className="flex items-center gap-4">
           <Image src="/linkedin.png" alt="Linkedin Icon" width={16} height={16}/>
           <p> {linkedinLink && (
             <a href={linkedinLink} className={`${almaraiFont.className} text-white  text-xs uppercase`}> {linkedinLink.split("/").filter(Boolean).pop()} </a>
@@ -46,8 +38,8 @@ const JudgeProfileCard = ({ name, designation, company, image, expertise, github
         </div>
       </div>
     </div>
-    <div className="absolute z-10 top-60 right-0 md:right-0 bg-[#177764] py-1.5 px-6  h-9 w-34 font-bold text-base rounded-full uppercase opacity-90 ">{company}</div>
-    <div className=" absolute z-10 top-36 left-0 md:left-0  bg-[#177764] py-1.5 px-6  h-9 w-34 font-bold text-base rounded-full uppercase">{name}</div>
+    <div className="absolute z-10 top-64 right-0 md:right-0 bg-[#177764] py-1.5 px-6  h-9 w-34 font-bold text-base rounded-full uppercase opacity-90 ">{company}</div>
+    <div className=" absolute z-10 top-30 left-0 md:left-0  bg-[#177764] py-1.5 px-6  h-9 w-34 font-bold text-base rounded-full uppercase">{name}</div>
 
     </div>
   );

@@ -9,7 +9,7 @@ const Iceland_font = Iceland({
 
 const Rulebook = () => {
     return (
-        <div className="relative flex items-center justify-center h-52">
+        <div className="relative flex items-center justify-center h-52 text-white">
             <div className="absolute inset-0 bg-wood-plank bg-no-repeat bg-center bg-contain"></div>
             <div
                 className={`${Iceland_font.className} relative z-10 text-[rgba(255, 255, 255, 0.71)] text-4xl md:text-6xl lg:text-7xl tracking-widest`}

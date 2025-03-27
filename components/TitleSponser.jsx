@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TitleSponser = () => {
   return (
-    <div className="mt-8 flex flex-col gap-8">
+    <div className="mt-8 flex flex-col gap-8 text-white">
       {/* Title sponser */}
       <div>
         <TitleBar side="left" title={"TITLE SPONSER"} />
