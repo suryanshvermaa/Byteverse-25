@@ -62,7 +62,7 @@ const OrganizerCardList = () => {
 
       <div className="flex justify-center">
         <div
-          className={`${Iceland_font.className} text-sm gap-1 md:text-lg uppercase flex flex-wrap lg:gap-4`}
+          className={`${Iceland_font.className} justify-center text-sm gap-1 md:text-lg uppercase flex flex-wrap lg:gap-4`}
         >
           {sections.map((section, ind) => (
             <h1
