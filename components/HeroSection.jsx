@@ -26,7 +26,8 @@ const HeroSection = () => {
             alt='Byteverse logo'
             />
             <button className='bg-white flex flex-row gap-2 py-1 rounded-lg justify-center items-center px-6 mt-8 lg:mt-20 lg:py-2'>
-            <div className='flex flex-row gap-2 items-center'>
+          <a href="https://unstop.com/hackathons/byteverse-70-hackathon-national-institute-of-technology-nit-patna-1432449 " target='_blank' rel='noopener noreferrer'>
+          <div className='flex flex-row gap-2 items-center'>
   <h1 className='text-[#1c4980] text-[10px] font-bold lg:text-xl'>Apply with</h1>
   <Image 
     src={'/unstop.png'} 
@@ -35,7 +36,7 @@ const HeroSection = () => {
     height={16} 
     className='w-[40px] lg:w-[80px]'
   />
-</div>
+</div></a>  
 
             
             </button>
