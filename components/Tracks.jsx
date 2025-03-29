@@ -17,7 +17,7 @@ const Tracks = () => {
     const tracks = [
         {
             id: 1,
-            trackName: "AR/VR",
+            trackName: "AI/ML",
             image: "/TracksImages/ARVR.png"
         },
         {
@@ -29,11 +29,6 @@ const Tracks = () => {
             id: 3,
             trackName: "WEB3 - BLOCKCHAIN",
             image: "/TracksImages/Web3.png"
-        },
-        {
-            id: 4,
-            trackName: "NETWORK SECURITY",
-            image: "/TracksImages/WebSec.png"
         },
         {
             id: 5,
@@ -102,7 +97,7 @@ const Tracks = () => {
     </div>
 
 
-    <div className={`${bungee.className} flex flex-row justify-center items-center relative my-10`}>
+    {/* <div className={`${bungee.className} flex flex-row justify-center items-center relative my-10`}>
         <h1 className="sm:text-6xl text-4xl font-bold uppercase text-black/50 relative z-10 text-center sm:mb-5 mt-0">
             SPECIAL TRACKS
             <span className="absolute inset-0 text-[#d9d9d9] translate-x-[-10px] translate-y-[-6px]">
@@ -140,9 +135,9 @@ const Tracks = () => {
                 <TracksCard key={track.id} trackName={track.trackName} image={track.image}/>
             ))
         }        
-    </div>
+    </div> */}
 
-    <div className={`${bungee.className} flex flex-row justify-center items-center relative my-10`}>
+    {/* <div className={`${bungee.className} flex flex-row justify-center items-center relative my-10`}>
         <h1 className="sm:text-6xl text-4xl font-bold uppercase text-black/50 relative z-10 text-center mb-5">
             SPECIAL SIDE TRACKS
             <span className="absolute inset-0 text-[#d9d9d9] translate-x-[-10px] translate-y-[-6px]">
@@ -180,7 +175,7 @@ const Tracks = () => {
                 <TracksCard key={track.id} trackName={track.trackName} image={track.image}/>
             ))
         }        
-    </div>
+    </div> */}
     </>
   )
 }
