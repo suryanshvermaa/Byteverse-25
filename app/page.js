@@ -18,7 +18,7 @@ export default function Home() {
       <AboutUs/>
       <Rulebook/>
       <Judges/>
-      {/* <Sponsors/>  */}
+      <Sponsors/> 
       <PrizesSection/>
       <FAQ/>   
       <ContactUs/>
